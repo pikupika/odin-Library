@@ -40,8 +40,8 @@ It lets users add books, mark them as read/unread, and remove them — all displ
 ---
 
 ## 📸 Screenshots
-[Screenshot1](Screenshots/ss1)
-[Screenshot2](Screenshots/ss2)
+[Screenshot1](Screenshots/ss1.png)
+[Screenshot2](Screenshots/ss2.png)
 
 ---
 
