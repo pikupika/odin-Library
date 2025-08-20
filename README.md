@@ -1,7 +1,7 @@
 # 📚 Library Project
 
 A simple library application built with **HTML, CSS, and JavaScript** as part of [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-library).  
-It lets users add books, mark them as read/unread, and remove them — all displayed dynamically in the browser.
+It lets users add books, mark them as read/unread, and remove them — all displayed dynamically in the browser. [Live](https://pikupika.github.io/odin-Library/)
 
 ---
 
