@@ -1,33 +1,38 @@
-function Book(title, author, pages, read = false) {
-  this.id = crypto.randomUUID();
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-}
+class Book {
+  constructor(title, author, pages, read = false) {
+    this.id = crypto.randomUUID();
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
 
-Book.prototype.toggleRead = function () {
-  this.read= !this.read;
+  toggleRead() {
+    this.read = !this.read;
+  }
 }
 
 const Library = [];
 
-function addBookToLibrary(title, author, pages, read) {
-  const newBbook = new Book(title, author, pages, read);
-  Library.push(newBbook);
-  renderLibrary();
+class addBookToLibrary {
+  constructor(title, author, pages, read) {
+    const newBook = new Book(title, author, pages, read);
+    Library.push(newBook);
+    renderLibrary();
+  }
 }
 
-function renderLibrary() {
-  const container = document.getElementById("library-container");
-  container.innerHTML = "";
+class renderLibrary {
+  constructor() {
+    const container = document.getElementById("library-container");
+    container.innerHTML = "";
 
-  Library.forEach((book) => {
-    const card = document.createElement("div");
-    card.classList.add("book-card");
-    card.dataset.id = book.id;
+    Library.forEach((book) => {
+      const card = document.createElement("div");
+      card.classList.add("book-card");
+      card.dataset.id = book.id;
 
-    card.innerHTML = `
+      card.innerHTML = `
       <h2>${book.title}</h2>
       <p><strong>Author:</strong> ${book.author}</p>
       <p><strong>Pages:</strong> ${book.pages}</p>
@@ -36,8 +41,9 @@ function renderLibrary() {
       <button class="remove-book">Remove</button>
     `;
 
-    container.appendChild(card);
-  })
+      container.appendChild(card);
+    });
+  }
 }
 
 const dialog = document.getElementById("book-dialog");
